@@ -7,6 +7,8 @@ gem 'rails', '~> 5.0.0'
 gem 'sqlite3'
 # Use devise for login schema
 gem 'devise'
+# simple form to make the bootstrap forms nice
+gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
