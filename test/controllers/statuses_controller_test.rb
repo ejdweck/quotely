@@ -22,8 +22,14 @@ class StatusesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should be logged in to post a status" do
+    post :create, status: {content: "Hello"}
+    assert_response :redirect
+    assert_redirected_to new_user_session_path
+  end
 
-  test "should create status" do
+  test "should create status when logged in" do
+    sign_in users(:Rob)
     assert_difference('Status.count') do
       post statuses_url, params: { status: { content: @status.content } }
     end
