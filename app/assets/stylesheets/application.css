@@ -17,3 +17,7 @@
 body {
   padding-top: 40px;
 }
+
+body .page-header h1 {
+  font-size: 2em;
+}

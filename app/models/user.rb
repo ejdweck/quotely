@@ -28,4 +28,5 @@ has_many :statuses
 
     "http://gravatar.com/avatar/#{hash}"
   end
+
 end
