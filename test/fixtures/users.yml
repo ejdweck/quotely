@@ -1,5 +1,11 @@
-WildBill:
-  first_name: "Wild"
-  last_name: "Bill"
-  email: "wild@bill.com"
-  profile_name: "uncles"
+Evan:
+  first_name: "Evan"
+  last_name: "Dweck"
+  email: "evanjordandweck@gmail.com"
+  profile_name: "robert"
+
+Calvin:
+    first_name: "Calvin"
+    last_name: "Cloutier"
+    email: "ccloutier@gmail.com"
+    profile_name: "calvinc"
