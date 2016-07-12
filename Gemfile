@@ -11,6 +11,11 @@ end
 group :production do
   gem 'pg'
 end
+
+# Use CanCanCan + rolify for authentication
+gem 'cancancan'
+gem 'rolify'
+
 # Use devise for login schema
 gem 'devise'
 # simple form to make the bootstrap forms nice
