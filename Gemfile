@@ -15,7 +15,8 @@ end
 # Use CanCanCan + rolify for authentication
 gem 'cancancan'
 gem 'rolify'
-
+# Use acts as taggable for mentions
+gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
 # Use devise for login schema
 gem 'devise'
 # simple form to make the bootstrap forms nice

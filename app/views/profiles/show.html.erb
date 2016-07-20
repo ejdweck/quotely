@@ -6,6 +6,13 @@
   <% @statuses.each do |status| %>
     <div class="well">
       <%= status.content %>
+      <br></br>
+      <% @profile_user = User.find(status.tag_list).first %>
+
+      <%= link_to @profile_user.profile_name, user_profile_path(@profile_user.profile_name) %>
+
+      <br></br>
+      <%= status.user.full_name %>
       <hr />
       <%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago
     </div>

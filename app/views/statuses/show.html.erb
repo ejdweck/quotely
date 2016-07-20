@@ -8,6 +8,8 @@
 <p>
   <strong>Content:</strong>
   <%= @status.content %>
+  <div><%= render @status.tags %></div>
+
 </p>
 
 <%= link_to 'Edit', edit_status_path(@status) %> |

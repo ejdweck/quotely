@@ -29,4 +29,5 @@ has_many :statuses
     "http://gravatar.com/avatar/#{hash}"
   end
 
+#  attr_accessor :profile_name, :id 
 end
