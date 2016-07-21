@@ -13,6 +13,10 @@
     <div class="span7">
       <strong><%= link_to status.user.full_name, user_profile_path(status.user.profile_name) %></strong>
       <p><%= status.content %></p>
+
+      <% @profile_user = User.find(status.tag_list).first %>
+      <%= link_to "-" + @profile_user.full_name, user_profile_path(@profile_user.profile_name) %>
+
       <div class="meta">
         <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
         <span class="admin">
