@@ -2,6 +2,8 @@
   <h1><%= @user.full_name %> </h1>
 </div>
 
+<%= link_to "Post a New Quote", new_status_path, class:"btn btn-success"%>
+
 <% if @statuses %>
   <% @statuses.each do |status| %>
     <div class="well">
@@ -9,10 +11,10 @@
       <br></br>
       <% @profile_user = User.find(status.tag_list).first %>
 
-      <%= link_to @profile_user.profile_name, user_profile_path(@profile_user.profile_name) %>
+      <%= link_to "-" + @profile_user.full_name, user_profile_path(@profile_user.profile_name) %>
 
       <br></br>
-      <%= status.user.full_name %>
+      <%= "as heard by " + status.user.full_name %>
       <hr />
       <%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago
     </div>
