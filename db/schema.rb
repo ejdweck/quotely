@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160714140107) do
+ActiveRecord::Schema.define(version: 20160810231449) do
 
   create_table "follows", force: :cascade do |t|
     t.string   "follower_type"
@@ -40,6 +40,15 @@ ActiveRecord::Schema.define(version: 20160714140107) do
     t.datetime "created_at"
     t.index ["mentionable_id", "mentionable_type"], name: "fk_mentionables"
     t.index ["mentioner_id", "mentioner_type"], name: "fk_mentions"
+  end
+
+  create_table "paperclip_images", force: :cascade do |t|
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
   end
 
   create_table "roles", force: :cascade do |t|

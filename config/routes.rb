@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :paperclip_images
   get 'profiles/show'
 
   devise_for :users, :controllers => { registrations: 'registrations' }

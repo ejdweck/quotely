@@ -12,6 +12,8 @@ group :production do
   gem 'pg'
 end
 
+# gem paperclip for profile pictures
+gem "paperclip", "~> 5.0.0"
 # Use CanCanCan + rolify for authentication
 gem 'cancancan'
 gem 'rolify'
