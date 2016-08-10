@@ -32,7 +32,8 @@
             <% if @statuses %>
               <% @statuses.each do |status| %>
                 <% @profile_user = User.find(status.tag_list).first %>
-                <% if @user == @profile_user %>
+
+                <% if @profile_user == @user %>
                   <div class="well">
                       <%= status.content %>
                       <br></br>
