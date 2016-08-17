@@ -9,7 +9,7 @@
     <div class="span-10">
       <div class="row">
         <div class="span-5">
-          <p>Shit I've Heard...</p>
+          <p>Quotes I've Heard...</p>
           <% if @statuses %>
             <% @statuses.each do |status| %>
               <div class="well">
@@ -28,7 +28,7 @@
           <% end%>
         </div>
         <div class="span-5">
-          <p>Shit I've Said...</p>
+          <p>Quotes I've Said...</p>
           <% @statuses = Status.all%>
             <% if @statuses %>
               <% @statuses.each do |status| %>
