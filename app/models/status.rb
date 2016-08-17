@@ -9,5 +9,5 @@ class Status < ApplicationRecord
   validates :tag_list, presence: true
   acts_as_taggable
 
-  
+
 end
