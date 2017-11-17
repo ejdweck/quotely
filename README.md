@@ -1,24 +1,25 @@
 # README
+A ruby on rails web application developed over summer 2016 to try and get my
+feet wet with application development. I've since ceased development on this
+project and no longer work with ruby.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A "production" version of the application is live at
+https://frozen-plateau-71151.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
+#Running Locally
+1.Download repositiory
 
-* System dependencies
+2.Install Ruby, and all necessary gems (dependencies)
 
-* Configuration
+3.Run Locally
+  make sure you are inside the quotely directory
+  i.e. cd ~/quotely
 
-* Database creation
+  Then run in the
+    $Rails server
 
-* Database initialization
+  Then open up a browser window and naviagte to
+  http://localhost:3000/
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
